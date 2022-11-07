@@ -1,13 +1,168 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+
+html,
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Gilroy-Regular", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+}
+
+.content_wrapper {
+  display: grid;
+  grid-template-columns: 300px 100%;
+}
+
+.blue {
+  background-color: #3d639d;
+  text-decoration: none;
+  color: white;
+}
+.white {
+  background-color: white;
+  text-decoration: none;
+  color: #3d639d;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.white path {
+  fill: #3d639d;
+  color: #3d639d;
+}
+
+.not_active {
+  text-decoration: none;
+  color: #bbc2d0;
+}
+
+.active {
+  text-decoration: none;
+  color: #00c48c;
+}
+
+.search_btn {
+  width: 100px;
+  height: 46px;
+  background-color: #00c48c;
+  color: white;
+  outline: none;
+  border-radius: 0px 26px 26px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+.paginate {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.prev_paginate {
+  position: absolute;
+  color: #262728;
+  font-size: 16px;
+  bottom: 0;
+  left: 0;
+}
+
+.next_paginate {
+  position: absolute;
+  color: #262728;
+  font-size: 16px;
+  bottom: 0;
+  right: 0;
+}
+
+.active_paginate {
+  background-color: #00c48c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 36px;
+  height: 36px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.page_paginate {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.83px;
+}
+
+.notification {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -3px;
+  right: 20px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #00c48c;
+  color: white;
+}
+
+.main_basket {
+  position: absolute;
+  top: -105px;
+  right: -5px;
+  width: 60px;
+  height: 60px;
+  color: white;
+  background: #ff647c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 40px;
+}
+
+.main_basket_clicked {
+  position: absolute;
+  top: -105px;
+  right: -5px;
+  color: white;
+  background: #ff647c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-radius: 40px;
+}
+
+.basket_clicked {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.basket {
+  display: none;
+}
+
+.increment {
+  color: #ff647c;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
 }
